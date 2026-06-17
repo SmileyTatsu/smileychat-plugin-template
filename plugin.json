@@ -1,0 +1,11 @@
+﻿{
+    "id": "example-plugin",
+    "name": "Example Plugin",
+    "version": "1.0.0",
+    "description": "Example SmileyChat plugin.",
+    "main": "dist/index.js",
+    "styles": ["dist/plugin.css"],
+    "permissions": ["ui:settings", "ui:styles", "storage"],
+    "category": "tools",
+    "enabled": true
+}

@@ -1,0 +1,17 @@
+﻿{
+    "name": "smileychat-plugin-template",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "bun build ./src/index.ts --outdir ./dist --external preact && bun ./scripts/copy-static.ts",
+        "pack": "bun run build && bun ./scripts/pack.ts",
+        "typecheck": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "@types/adm-zip": "latest",
+        "adm-zip": "latest",
+        "bun-types": "latest",
+        "typescript": "latest"
+    }
+}

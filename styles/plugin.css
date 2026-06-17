@@ -1,0 +1,32 @@
+﻿.example-plugin-panel {
+    display: grid;
+    gap: 10px;
+    max-width: 520px;
+}
+
+.example-plugin-panel h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.example-plugin-panel p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.example-plugin-panel button {
+    justify-self: start;
+    min-height: 34px;
+    padding: 0 12px;
+    border: 1px solid color-mix(in srgb, var(--border, #334155) 85%, white 15%);
+    border-radius: 6px;
+    background: var(--surface-raised, #1f2937);
+    color: var(--text-primary, #f8fafc);
+    font: inherit;
+    cursor: pointer;
+}
+
+.example-plugin-panel button:hover {
+    background: var(--surface-hover, #273449);
+}

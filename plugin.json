@@ -1,4 +1,4 @@
-﻿{
+{
     "id": "example-plugin",
     "name": "Example Plugin",
     "version": "1.0.0",
@@ -7,5 +7,6 @@
     "styles": ["dist/plugin.css"],
     "permissions": ["ui:settings", "ui:styles", "storage"],
     "category": "tools",
+    "apiVersion": 1,
     "enabled": true
 }

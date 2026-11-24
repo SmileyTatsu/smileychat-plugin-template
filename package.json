@@ -1,4 +1,4 @@
-﻿{
+{
     "name": "smileychat-plugin-template",
     "version": "1.0.0",
     "private": true,
@@ -12,6 +12,7 @@
         "@types/adm-zip": "latest",
         "adm-zip": "latest",
         "bun-types": "latest",
+        "preact": "^10.27.2",
         "typescript": "latest"
     }
 }

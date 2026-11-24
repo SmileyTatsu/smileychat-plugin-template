@@ -6,7 +6,8 @@
     "scripts": {
         "build": "bun build ./src/index.ts --outdir ./dist --external preact && bun ./scripts/copy-static.ts",
         "pack": "bun run build && bun ./scripts/pack.ts",
-        "typecheck": "tsc --noEmit"
+        "typecheck": "tsc --noEmit",
+        "update-types": "bun ./scripts/update-types.ts"
     },
     "devDependencies": {
         "@types/adm-zip": "latest",

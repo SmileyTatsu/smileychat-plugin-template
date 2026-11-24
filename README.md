@@ -19,7 +19,16 @@ End users should install the ZIP from the SmileyChat Store or from a manual arti
 
 ## Plugin API Typings
 
-`types/smileychat-plugin-api.d.ts` is generated from the SmileyChat app, so the types cannot drift from the runtime. Refresh it by copying `types/smileychat-plugin-api.d.ts` from the SmileyChat repo after running `bun run plugin-types` there.
+`types/smileychat-plugin-api.d.ts` is generated from the SmileyChat app, so the types cannot drift from the runtime.
+
+Refresh it with:
+
+```sh
+bun run update-types            # tracks SmileyChat main
+bun run update-types --ref v1.2.0
+```
+
+The script downloads `types/smileychat-plugin-api.d.ts` from the SmileyChat repo and refuses anything that does not look like those typings. Commit the refreshed file so a clone typechecks without network access.
 
 Typecheck plugins against it instead of redeclaring API members:
 
